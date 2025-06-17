@@ -1,0 +1,98 @@
+/* Advanced Google-style logo */
+.logo-text {
+  font-size: 5.2rem;
+  text-align: center;
+  font-family: arial, sans-serif;
+  letter-spacing: -0.05rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  cursor: default;
+  margin-bottom: 30px;
+  user-select: none;
+  position: relative;
+}
+
+.logo-text h1 {
+  line-height: 1rem;
+  margin: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+}
+
+.logo-text h1:hover {
+  transform: scale(1.02) rotate(1deg);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Individual letter animations */
+.logo-text h1 span {
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+}
+
+.logo-text h1:hover span {
+  animation: letterBounce 0.6s ease-in-out infinite alternate;
+}
+
+.logo-text h1 span:nth-child(1) { animation-delay: 0s; }
+.logo-text h1 span:nth-child(2) { animation-delay: 0.1s; }
+.logo-text h1 span:nth-child(3) { animation-delay: 0.2s; }
+.logo-text h1 span:nth-child(4) { animation-delay: 0.3s; }
+.logo-text h1 span:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes letterBounce {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-8px) scale(1.1); }
+}
+
+/* Glowing effect on hover */
+.logo-text::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(66, 133, 244, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.6s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.logo-text:hover::before {
+  width: 400px;
+  height: 400px;
+}
+
+.blue {
+  color: #4285f4;
+}
+.red {
+  color: #ea4335;
+}
+.yellow {
+  color: #fcbc05;
+}
+.green {
+  color: #34a852;
+}
+
+.search-logo {
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 500px) {
+  .search-logo {
+    margin-bottom: 15px;
+  }
+  .frontpage-logo .logo-text {
+    font-size: 2.2rem;
+    letter-spacing: -0.1rem;
+  }
+}
