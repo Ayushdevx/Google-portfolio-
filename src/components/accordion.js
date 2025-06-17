@@ -79,7 +79,7 @@ const AccordionComponent = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-               Definitely email. Contact me at enjeckc1e0@gmail.com.
+               Definitely email. Contact me at fawazofficial20@gmail.com.
               </Typography>
             </AccordionDetails>
           </Accordion>

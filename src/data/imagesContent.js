@@ -1,5 +1,5 @@
 import tutcode from "../images/tutcode.png";
-import enjeck from "../images/enjeck.png";
+import fawazPortfolio from "../images/gfolio.png";
 import ll from "../images/libre-logos.svg";
 import gfolio from "../images/gfolio.png";
 import jpg2svg from "../images/jpg2svg.png";
@@ -10,70 +10,66 @@ import li from "../images/linkedIn-icon.png";
 import gh from "../images/github-icon.png";
 import email from "../images/gmail-icon.png";
 import placeholder from "../images/bg1.png";
+
 export const ImagesContent = [
-  {
-    link: "https://github.com/enjeck/TutCode",
-    img: tutcode,
-    name: "TutCode - site to simultaneously  view tutorials and code",
-  },
   {
     link: `${window.location.origin}`,
     img: gfolio,
-    name: "Gfolio (this website)",
+    name: "Fawaz's Portfolio - Google-inspired portfolio website",
   },
   {
-    link: "https://enjeck.com/",
-    img: enjeck,
-    name: "Personal Website",
-  },
-  {
-    link: "https://github.com/enjeck/libre-logos",
-    img: ll,
-    name: "Libre Logos",
-  },
-  {
-    link: "https://github.com/enjeck/jpg2svg",
-    img: jpg2svg,
-    name: "jpg2svg",
-  },
-  {
-    link: "https://github.com/enjeck/CrazyPassword",
+    link: "https://github.com/fawazahamed/timer-extension",
     img: placeholder,
-    name: "Crazy Password",
+    name: "Timer Extension - Productivity timer with audio alerts",
   },
   {
-    link: "https://github.com/enjeck/Geo-Guess",
+    link: "https://github.com/fawazahamed/snake-game",
     img: gg,
-    name: "Geo Guess",
+    name: "2-Player Snake Game - JavaScript multiplayer game",
   },
   {
-    link: "https://github.com/enjeck/Blobby",
-    img: blobby,
-    name: "Blobby",
-  },
-  {
-    link: "https://github.com/enjeck/Google-Sheet-to-website",
-    img: placeholder,
-    name: "Google Sheet to Website",
-  },
-  {
-    link: "https://github.com/enjeck/CryptoAlgoVisualizer",
+    link: "https://github.com/fawazahamed/3d-planetary-animation",
     img: cav,
-    name: "Crypto Algorithm Visualizer",
+    name: "3D Planetary Animation - Interactive solar system",
   },
   {
-    link: "https://github.com/enjeck/btns",
+    link: "https://github.com/fawazahamed/interior-design-viz",
     img: placeholder,
-    name: "btns",
+    name: "Interior Design Visualization - SketchUp renders",
   },
   {
-    link: "https://github.com/enjeck",
+    link: "https://github.com/fawazahamed/web-projects",
+    img: tutcode,
+    name: "Web Development Projects - HTML, CSS, JavaScript",
+  },
+  {
+    link: "https://github.com/fawazahamed/ai-experiments",
+    img: blobby,
+    name: "AI Experiments - Machine learning projects",
+  },
+  {
+    link: "https://github.com/fawazahamed/react-components",
+    img: ll,
+    name: "React Components Library - Reusable UI components",
+  },
+  {
+    link: "https://github.com/fawazahamed/python-automation",
+    img: jpg2svg,
+    name: "Python Automation - Scripts and tools",
+  },
+  {
+    link: "https://github.com/fawazahamed",
     img: gh,
-    name: "GitHub - Explore my projects and code"
+    name: "GitHub - Explore Fawaz's projects and code"
   },
   {
-    link: "https://www.linkedin.com/in/c1e0/",
+    link: "https://linkedin.com/in/fawazahamed",
     img: li,
-    name: "LinkedIn - Connect and share experiences"
+    name: "LinkedIn - Connect with Fawaz Ahamed"
+  },
+  {
+    link: "mailto:fawazofficial20@gmail.com",
+    img: email,
+    name: "Email - Contact Fawaz directly"
   },
 ];

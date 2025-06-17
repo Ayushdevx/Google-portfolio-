@@ -114,13 +114,21 @@ function Home() {
     }
   }
 
-  // Page loading effect
+  // Page loading effect with fallback
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 800); // Reduced from 2000ms to 800ms for better UX
+    }, 800); // Reduced loading time
 
-    return () => clearTimeout(timer);
+    // Fallback: force show content after 3 seconds if still loading
+    const fallbackTimer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(fallbackTimer);
+    };
   }, []);
 
   // Enhanced scroll reveal animations
@@ -225,10 +233,28 @@ function Home() {
             <span className="blue">a</span>
             <span className="green">z</span>
           </div>
+          {/* Skip button for development */}
+          <button 
+            onClick={() => setIsLoading(false)}
+            style={{
+              position: 'absolute',
+              bottom: '20px',
+              right: '20px',
+              background: '#4285f4',
+              color: 'white',
+              border: 'none',
+              padding: '10px 20px',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '12px'
+            }}
+          >
+            Skip Loading
+          </button>
         </div>
       )}
       
-      <div className={`main home ${isLoading ? 'hidden' : 'page-transition-enter-active'}`}>
+      <div className={`main home ${isLoading ? 'loading' : 'page-transition-enter-active'}`}>
       <div className="top-menu">
         <span className="top-menu-item no-show-mobile">
           <a href="mailto:fawaz.ahamed2023@vitstudent.ac.in"> Gmail </a>

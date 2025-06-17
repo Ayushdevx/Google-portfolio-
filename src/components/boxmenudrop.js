@@ -87,21 +87,21 @@ const BoxMenuDrop = () => {
             />
             <p> Images </p>
           </Link >
-          <a className="drop-link" href="mailto:enjeckc1e0@gmail.com">
+          <a className="drop-link" href="mailto:fawazofficial20@gmail.com">
             <img
               src={email}
               alt=""
             />
             <p> Email </p>
           </a>
-          <a className="drop-link" href="https://github.com/enjeck">
+          <a className="drop-link" href="https://github.com/fawazahamed">
             <img
               src={gh}
               alt=""
             />
             <p> GitHub </p>
           </a>
-          <a className="drop-link" href="https://www.linkedin.com/in/c1e0/">
+          <a className="drop-link" href="https://linkedin.com/in/fawazahamed">
             <img
               src={li}
               alt=""

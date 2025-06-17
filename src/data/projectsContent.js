@@ -1,5 +1,4 @@
 import tutcode from "../images/tutcode.png";
-import enjeck from "../images/enjeck.png";
 import ll from "../images/libre-logos.svg";
 import gfolio from "../images/gfolio.png";
 import jpg2svg from "../images/jpg2svg.png";
